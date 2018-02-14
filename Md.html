@@ -1,1 +1,93 @@
-<h1>Isaiah is not the goat</h1>
+<!DOCTYPE html>
+
+<head>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet' rel='stylesheet' type='text/css'>
+<script src="/assets/jquery.js"></script>
+<style>
+body { 
+  text-align: center;
+  font-family: 'Nanum Pen Script';
+  font-size: 35px;
+  background: #e1eaf0;
+}
+button {
+  margin: 40px;
+}
+input {
+  font-size: 24px;
+}
+.fill {
+  background: yellow;
+  color: red;
+  border-bottom: 2px blue solid;
+  font-family: 'Inconsolata';
+  font-size: 35px;
+  padding: 0 6px;
+  margin: 4px;
+}
+</style>
+</head>
+
+<body>
+<div class="prompt"></div>
+<button>Next</button>
+<script>
+// List of prompts for the user
+var prompts = [
+	'Type your name',
+	'Type what kind of pizza you like',
+	'Type "Pizza"',
+	'Chose one Extra cheese or Extra peppers',
+	'Type any soda you want',
+	'Type your favorite video game',
+	'Type your favorite movie',
+	'Type where you want to visit',
+	'Type your favorite restaurant',
+	'Type your favorite food in that restaurant',
+	'Choose one "Favorite" or "Personal"'
+   ];
+
+var answers=[];
+// Keep track of current prompt we're on
+var currentPrompt = 0;
+ 
+// A function that will call the next prompt
+var nextPrompt = function() {
+  //if there's no answer in the form
+  if (currentPrompt != 0){
+    answers.push($('input').val());
+  }
+	// if there is a next prompt
+	if (currentPrompt < prompts.length) {
+		// put first prompt in all html elements with class 
+		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		// move the next prompt into variable currentPrompt 
+		currentPrompt = currentPrompt + 1;
+	}
+	//or else if we're at the end of the array
+	else {
+		// put a new message into the html.
+		showFinal();
+	}
+}
+
+//puts user answers into HTML
+var showFinal = function() {
+  $('.prompt').html('Hi, I am <span class="fill">'+answers[0]+'</span> and I like to eat <span class="fill"> '+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>. I like <span class="fill">'+answers[3]+'</span>, and I also like <span class="fill">'+answers[4]+'</span>. My favorite game is <span class="fill">'+answers[5]+'</span>, in my opinion the best movie is <span class="fill">'+answers[6]+'</span>. I like to visit <span class="fill">'+answers[7]+'</span>. My favorite restaurant is <span class="fill">'+answers[8]+'</span>, I like to eat <span class="fill">'+answers[9]+'</span>. These are some  <span class="fill">'+answers[10]+'</span> things I like to do or eat.');
+  //and then hide the button
+  $('button').hide();
+}
+// run nextPrompt function when button is clicked
+$('button').click(function() {
+	nextPrompt();
+});
+
+// Show the first prompt as soon as js loads
+nextPrompt();
+</script>
+
+</body>
