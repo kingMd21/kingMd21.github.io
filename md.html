@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #07DF94;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #1acfef;
+      color: white;
+      padding: 15px;
+    }
+    .carousel-inner > .item > img {
+    	height: 600px;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+		
+      }
+      .row.content {height: auto;} 
+    }
+	h2 {
+	   font-family: 'Indie Flower', cursive;
+	}
+	p {
+	   font-family: 'Damion', cursive;	
+	   font-size: 25px;
+	}
+
+	
+		
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Md's Blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="file:///Users/student/Desktop/zamanmdBootstrap1.html">Home</a></li>
+        <li><a href="http://www.nba.com/#/">Friends</a></li>
+        <li><a href="https://www.instagram.com/?hl=en">Social media</a></li>
+        <li><a href="https://www.bio.org/">Bio</a></li>
+      </ul><br>
+      <div class="input-group">
+	 <form>
+     <p>Search: <input id="keywords" size="24" placeholder="start typing"></p>
+     </form>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+	  
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>I Love Basketball </h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Isaiah, Sep 10, 2001.</h5>
+      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+      <p>Ball game and team sport in which two teams of five players try to score points by throwing or "shooting" a ball through the top of a basketball hoop while following a set of rules.Elbow pass – Introduced with much hype by Jason Williams, the Elbow Pass is one of the most difficult trick passes to execute. The Elbow Pass serves as a devastating complement to the Behind-the-Back pass and can be used with various no-look elements. Most effective on a fast-break, the Elbow Pass entails what appears to the defender to be a simple Behind-the-Back pass, but as the ball crosses the passer's back, the passer hits it with his elbow, redirecting the ball back toward the side it started on and hopefully leaving the defender(s) amazed and out of position. Williams was able to pull off this pass at a full sprint during a Rookie All-Star game, but most players have trouble hitting the ball with their elbow while standing still.</p>
+      <br><br>
+      
+      <h4><small>Tomorrow's topic</small></h4>
+      <hr>
+      <h2>Basketball news</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by James Harden, Dec 21, 1651.</h5>
+      <h5><span class="label label-success">Lorem</span></h5><br>
+      <p>The Auburn men's basketball program self-reported to the compliance department following an incident after Saturday's loss to Florida in which Gators fans heaped money at Tigers players heading to the locker room. The money, although considered a marginal amount, was enough for coach Bruce Pearl to decide he wanted to take no chances as it relates to potential NCAA implications."It was real money, and I think there's $5 or $6 that are out there, and because you guys know we're compliant, we've actually turned that money over to compliance," Pearl said via AL.com. "Really. I don't know, it was five or six bucks, but our people have the money. I don't know what they're going to do with it, probably give it to charity, but we've already self-reported."</p>
+      <hr>
+
+      <h4>Leave your feedback:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">50,000</span> Feedback:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Westchester_Knicks_logo.svg/1200px-Westchester_Knicks_logo.svg.png" class="img-triangle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Isaiah <small> Jan 22, 1789, 12:18 PM</small></h4>
+          <p>I am cheering for you!! We are going to win the next game, #world champs</p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="https://www.bigonsports.com/wp-content/uploads/2016/12/NBA-Russell-Westbrook-MVP-odds.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Westbrook <small>Sep 15, 1666, 2:55 AM</small></h4>
+          <p>I am trusting in you and the whole team to lead The Thunder to it's 80th victory</p>
+          <br>
+          <p><span class="badge">20,000,000</span> Feedback:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="https://s.yimg.com/ny/api/res/1.2/umHJJQAzal.Ar.laG6bGWQ--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/b427d19dd6238628dc7fa8acc2c212d3" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>Basketball Pro's <small>May 9, 1542, 9:28 4M</small></h4>
+              <p>I play basketball too!!!</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-3">
+      <p>Best player</p>
+      <img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3468.png&w=350&h=254" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+<div class="col-sm-3">
+      <p>Decent player</p>
+      <img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1975.png" style="width:100%" alt="Image">
+    </div>
+<div class="col-sm-3">
+      <p>Ok player</p>
+      <img src="http://lakergifs.com/wp-content/uploads/2016/05/4.png" style="width:100%" alt="Image">
+    </div>
+<div class="col-sm-3">
+      <p>Worst player in NBA history</p>
+      <img src="http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/2433.png&w=350&h=254" style="width:100%" alt="Image">
+    </div>
+
+
+
+<footer class="container-fluid">
+  <p>Basketball player</p>
+</footer>
+
+<script type="text/javascript" src="hilitor.js">
+</script>
+
+<script type="text/javascript">
+  var myHilitor;
+  document.addEventListener("DOMContentLoaded", function(e) {
+    myHilitor = new Hilitor2("playground");
+    myHilitor.setMatchType("left");
+  }, false);
+  document.getElementById("keywords").addEventListener("keyup", function(e) {
+    myHilitor.apply(this.value);
+  }, false);
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://kiaenzona.com/wp-content/uploads/2017/04/160413134216-playoffs-2016-official-t1-creative.home-t11-750x400.jpg" alt="Image">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="http://cdn.akamai.steamstatic.com/steam/apps/577800/extras/Dame_Shot_Clock.jpg?t=1507660027" alt="Image">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3>What We Do</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://media.giphy.com/media/95qNCH43Mtoe4/giphy.gif" class="img-responsive" style="width:100%" alt="Image">
+      <p>Dunk</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="https://media.giphy.com/media/UGrBN50op5X0I/giphy.gif" class="img-responsive" style="width:100%" alt="Image">
+      <p>Ankle breaker</p>    
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+       <p>HAlf Court shot</p>
+      </div>
+      <div class="well">
+       <p>Turnovers</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
+
