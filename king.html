@@ -19,7 +19,11 @@
       background-color: #07DF94;
       height: 100%;
     }
-    
+     img {  
+	 border-radius: 50px;
+	 background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2000px-No_image_available.svg.png');
+	 height: 50px; 
+    }
     /* Set black background color, white text and some padding */
     footer {
       background-color: #1acfef;
@@ -37,6 +41,13 @@
 		
       }
       .row.content {height: auto;} 
+    }
+    table {
+      margin-left: 20px;
+      font-size: 18px; 
+    }  
+    td {
+      height: 75px; 
     }
 	h2 {
 	   font-family: 'Indie Flower', cursive;
@@ -135,23 +146,47 @@
       <br><br>
       
       <p><span class="badge">50,000</span> Feedback:</p><br>
-      <table class="table table-striped">
-	<thead>
-	  <tr>
-	    <th>Avatar</th>
-	    <th>Name</th>
-	    <th>Comment</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr>
-	    <!-- This is empty for now, but it will be filled out by an event handler in application.js with the most recent recommendation data from Firebase. -->
-            <td id="link"></td>
-	    <td id="title"></td>
-	    <td id="remark"></td>
-	  </tr>
-	</tbody>
-       </table>
+      <table>
+	<tr>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+		        <td><strong>Avatar</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="link">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Name</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="title">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Comment</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="remark">
+
+		</tbody>
+	    </table>
+	</td>
+	</tr>
+      </table>
+
       
       <div class="row">
         <div class="col-sm-2 text-center">
