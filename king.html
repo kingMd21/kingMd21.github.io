@@ -21,10 +21,17 @@
 		background-color: #07DF94;
 		height: 100%;
 	}
-  tbody img {  
+        tbody img {  
 		 border-radius: 50px;
 		 background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2000px-No_image_available.svg.png');
 		 height: 50px; 
+	}
+	table {
+		margin-left: 20px;
+		font-size: 18px; 
+	}  
+	td {
+		height: 75px; 
 	}
 	#remark {
 		 font-family: 'Inconsolata', monospace;
@@ -41,21 +48,25 @@
 	}
 	/* On small screens, set height to 'auto' for sidenav and grid */
 	@media screen and (max-width: 767px) {
-		.sidenav {
-			height: auto;
-			padding: 15px;	
-		}
-		.row.content {
-			height: auto;
-		} 
+			.sidenav {
+				height: auto;
+				padding: 15px;	
+			}
+			.row.content {
+				height: auto;
+			} 
+	    table {
+				margin-left: 0;
+				font-size: 10px;
+	    }
+	    tbody img {
+				height: 20px;
+	    }
+	    #remark {
+				font-size: 14px;
+	    }
 	}
-	table {
-		margin-left: 20px;
-		font-size: 18px; 
-	}  
-	td {
-		height: 75px; 
-	}
+
 	h2 {
 	   font-family: 'Indie Flower', cursive;
 	}
@@ -82,16 +93,6 @@
   @media (max-width: 600px) {
     .carousel-caption {
       display: none; 
-    }
-    table {
-			margin-left: 0;
-			font-size: 10px;
-    }
-    tbody img {
-			height: 20px;
-    }
-    #remark {
-			font-size: 14px;
     }
   }
 	
